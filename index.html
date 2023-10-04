@@ -7,50 +7,17 @@
             background-color: black;
             text-align: center;
             font-family: Arial, sans-serif;
-            color: #00ff00; /* Neon Green */
+            color: white;
         }
 
-        #matrix {
-            font-size: 24px;
-            font-family: "Courier New", monospace;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0.5;
+        p {
+            font-size: 98px;
+            color: #00ff00; /* Neon Green */
+            text-shadow: 0 0 10px #00ff00; /* Neon Green Glow */
         }
     </style>
 </head>
 <body>
     <p>YES</p>
-    <div id="matrix"></div>
-
-    <script>
-        const matrixElement = document.getElementById("matrix");
-        const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        const speed = 100; // Adjust the speed of the matrix rain
-
-        function getRandomCharacter() {
-            return characters[Math.floor(Math.random() * characters.length)];
-        }
-
-        function generateMatrix() {
-            const columns = Math.floor(window.innerWidth / 20);
-            const rows = Math.floor(window.innerHeight / 20);
-            const matrixText = [];
-
-            for (let i = 0; i < rows; i++) {
-                let row = "";
-                for (let j = 0; j < columns; j++) {
-                    row += getRandomCharacter();
-                }
-                matrixText.push(row);
-            }
-
-            matrixElement.textContent = matrixText.join("\n");
-        }
-
-        generateMatrix();
-        setInterval(generateMatrix, speed);
-    </script>
 </body>
 </html>
