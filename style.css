@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#spinWheel {
+    font-size: 98px;
+    color: #00ff00; /* Neon Green */
+    text-shadow: 0 0 10px #00ff00; /* Neon Green Glow */
+    transition: transform 4s ease-out;
+}
+
+#spinButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #00ff00;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
