@@ -10,23 +10,31 @@
             color: white;
         }
 
-        p {
+        #spinWheel {
             font-size: 98px;
             color: #00ff00; /* Neon Green */
             text-shadow: 0 0 10px #00ff00; /* Neon Green Glow */
+            transition: transform 4s ease-out;
         }
 
-        iframe {
-            width: 1200px; /* Width of the iframe */
-            height: 850px; /* Height of the iframe */
-            border: none; /* Removes default border around iframe */
-            margin-top: 20px; /* Adds some space above the iframe */
+        #spinButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            background-color: #00ff00;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <p>YES</p>
-    <!-- Embedding notskope.com -->
-    <iframe src="https://notskope.com" title="Notskope"></iframe>
+
+    <div id="spinWheel">SPIN</div>
+    <button id="spinButton">Spin the Wheel</button>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
