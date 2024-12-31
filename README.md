@@ -41,10 +41,12 @@ spin-the-wheel/
 
 ## 📸 Screenshots
 ### Game Interface
-![Spinning Wheel Interface](https://via.placeholder.com/800x600.png?text=Screenshot+Coming+Soon)
+![image](https://github.com/user-attachments/assets/e35a744b-e513-4ab1-a514-ded9f079d950)
+
 
 ### Celebration Effect
-![Confetti Effect](https://via.placeholder.com/800x600.png?text=Screenshot+Coming+Soon)
+![image](https://github.com/user-attachments/assets/19991d83-9cb7-459d-b360-0b509ed901dd)
+
 
 ## 🌟 Features in Progress
 - Add sound effects for spinning and result announcements.
