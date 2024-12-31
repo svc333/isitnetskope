@@ -1,15 +1,26 @@
 body {
-    background-color: black;
+    background: linear-gradient(45deg, #000, #003300, #000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
     text-align: center;
     font-family: Arial, sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #spinWheel {
     font-size: 98px;
-    color: #00ff00; /* Neon Green */
-    text-shadow: 0 0 10px #00ff00; /* Neon Green Glow */
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
     transition: transform 4s ease-out;
+    margin-top: 20px;
 }
 
 #spinButton {
@@ -21,4 +32,25 @@ body {
     color: black;
     cursor: pointer;
     border-radius: 5px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 5px #00ff00; }
+    50% { box-shadow: 0 0 20px #00ff00; }
+    100% { box-shadow: 0 0 5px #00ff00; }
+}
+
+#history {
+    margin-top: 30px;
+}
+
+#resultHistory {
+    list-style: none;
+    padding: 0;
+}
+
+#resultHistory li {
+    font-size: 20px;
+    margin: 5px 0;
 }
